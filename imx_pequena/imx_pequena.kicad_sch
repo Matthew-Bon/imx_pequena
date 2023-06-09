@@ -1,0 +1,80 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 71.12 68.58) (size 33.02 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid b1ca3e0b-34ce-4229-a1de-c4269e4ccd13)
+    (property "Sheet name" "imx_mpu" (id 0) (at 71.12 67.8684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "imx_mpu.kicad_sch" (id 1) (at 71.12 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13" (page "2"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3" (page "3"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918" (page "4"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/6f5d54ae-44d1-4e1b-98ec-d3e86947a379" (page "5"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/8547231b-655d-4dc1-90f6-5d7d466e2d62" (page "6"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/1edcf502-221a-48ec-b1ce-ef1be6dd187d" (page "7"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/f706b935-d0e8-4efc-a2ee-118b40541d20" (page "8"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/d3d19f8e-835b-4634-97b0-1331e4a5598a" (page "9"))
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/084b2259-f137-4bad-af55-5dadc5140dcb" (page "10"))
+  )
+
+  (symbol_instances
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/00acec49-58b1-48a9-8da9-1ca8ca6d6ffe"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/0f440fbf-a405-486e-b811-2effc51f77e8"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/5ad0012c-12c7-4b69-b3ce-603d4be9ef87"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/b9725f30-b6ee-47f3-be3a-08bf107c1adf"
+      (reference "R?") (unit 1) (value "240") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/f22376b1-a6be-4bb1-b0fe-9090f0faf516"
+      (reference "R?") (unit 1) (value "240") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/f0c3052c-1cd9-43ec-abdf-2d5e6503e296"
+      (reference "U1") (unit 1) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/03678a31-7b5d-4db0-8365-3bdc73accf12"
+      (reference "U1") (unit 2) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/6f5d54ae-44d1-4e1b-98ec-d3e86947a379/1310bd72-89e4-492f-97f5-309c7afa824f"
+      (reference "U1") (unit 3) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/8547231b-655d-4dc1-90f6-5d7d466e2d62/d4dc4afe-d7d7-4c6c-bd2a-43a235e96b5e"
+      (reference "U1") (unit 4) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/1edcf502-221a-48ec-b1ce-ef1be6dd187d/ce6cb00c-9f92-4c15-89ea-afb6bf61b25c"
+      (reference "U1") (unit 5) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/f706b935-d0e8-4efc-a2ee-118b40541d20/0f929a3e-7fb8-4eac-8dbe-d8e76a4f9748"
+      (reference "U1") (unit 6) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/d3d19f8e-835b-4634-97b0-1331e4a5598a/1330d1c0-7f78-42df-8283-5ef9559bfa0a"
+      (reference "U1") (unit 7) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/084b2259-f137-4bad-af55-5dadc5140dcb/ccbda03d-c271-4d99-bfd7-8efc8bd385de"
+      (reference "U1") (unit 8) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/fba9fbb8-848c-4084-97cb-3db4f3850918/6858884a-64ed-4b44-a785-57fb99882dec"
+      (reference "U2") (unit 1) (value "MT41K64M16TW-107:J_TR") (footprint "md_micron_dram:BGA96C80P9X16_1400X800X120N")
+    )
+  )
+)
