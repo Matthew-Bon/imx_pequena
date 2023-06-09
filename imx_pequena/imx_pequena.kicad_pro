@@ -450,6 +450,10 @@
     [
       "084b2259-f137-4bad-af55-5dadc5140dcb",
       "mpu_h_power"
+    ],
+    [
+      "deed3496-aa8f-4022-9b2c-a5a4f278934d",
+      "dram_decoupling"
     ]
   ],
   "text_variables": {}
