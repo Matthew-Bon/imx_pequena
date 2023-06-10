@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="MCIMX6Z0xxx09" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_13 http://mcuxpresso.nxp.com/XSD/mex_configuration_13.xsd" uuid="f2ff68bf-722d-414c-aa00-db21d913b599" version="13" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MCIMX6Z0xxx09</processor>
+      <package>MCIMX6Z0DVM09</package>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="ca7">
+         <core name="Cortex-A7" id="ca7" description="A7 core"/>
+      </cores>
+      <description></description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+      <generate_code_modified_registers_only>false</generate_code_modified_registers_only>
+      <update_include_paths>true</update_include_paths>
+      <generate_registers_defines>false</generate_registers_defines>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="13.1" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>13.0.0</processor_version>
+            <power_domains/>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>ca7</coreID>
+               </options>
+               <dependencies/>
+               <pins>
+                  <pin peripheral="USDHC1" signal="usdhc_data, 3" pin_num="A2" pin_signal="SD1_DATA3"/>
+                  <pin peripheral="USDHC1" signal="usdhc_data, 1" pin_num="B2" pin_signal="SD1_DATA1"/>
+                  <pin peripheral="USDHC1" signal="usdhc_cmd" pin_num="C2" pin_signal="SD1_CMD"/>
+                  <pin peripheral="USDHC1" signal="usdhc_data, 2" pin_num="B1" pin_signal="SD1_DATA2"/>
+                  <pin peripheral="USDHC1" signal="usdhc_clk" pin_num="C1" pin_signal="SD1_CLK"/>
+                  <pin peripheral="USDHC1" signal="usdhc_data, 0" pin_num="B3" pin_signal="SD1_DATA0"/>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <ddr name="DDR" version="1.0" enabled="false" update_project_code="true">
+         <components/>
+      </ddr>
+      <tee name="TEE" version="4.0" enabled="false" update_project_code="true">
+         <tee_profile>
+            <processor_version>N/A</processor_version>
+         </tee_profile>
+      </tee>
+      <pbl name="PBL" version="1.0" enabled="false" update_project_code="true">
+         <pbl_configuration/>
+      </pbl>
+      <serdes name="SERDES" version="1.0" enabled="false" update_project_code="true">
+         <components/>
+      </serdes>
+   </tools>
+</configuration>
