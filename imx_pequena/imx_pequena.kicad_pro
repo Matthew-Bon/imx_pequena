@@ -454,6 +454,10 @@
     [
       "deed3496-aa8f-4022-9b2c-a5a4f278934d",
       "dram_decoupling"
+    ],
+    [
+      "e35c56f9-4713-4571-acdb-6ae2f2073fad",
+      "usb"
     ]
   ],
   "text_variables": {}
