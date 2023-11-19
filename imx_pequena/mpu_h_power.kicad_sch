@@ -1241,6 +1241,14 @@
   )
 
 
+  (global_label "3v3" (shape input) (at 201.93 44.45 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 8da37310-3c2d-4d92-afcf-68fbe6053357)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 207.7298 44.3706 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+
   (symbol (lib_id "MCIMX6Z0DVM09AB:MCIMX6Z0DVM09AB") (at 135.89 86.36 0) (unit 8)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ccbda03d-c271-4d99-bfd7-8efc8bd385de)
