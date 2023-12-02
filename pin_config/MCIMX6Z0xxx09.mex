@@ -18,6 +18,11 @@
    </preferences>
    <tools>
       <pins name="Pins" version="13.1" enabled="true" update_project_code="true">
+         <generated_project_files>
+            <file path="board/pin_mux.c" update_enabled="true"/>
+            <file path="board/pin_mux.dts" update_enabled="true"/>
+            <file path="board/pin_mux.h" update_enabled="true"/>
+         </generated_project_files>
          <pins_profile>
             <processor_version>13.0.0</processor_version>
             <power_domains/>
@@ -37,22 +42,32 @@
                   <pin peripheral="USDHC1" signal="usdhc_data, 2" pin_num="B1" pin_signal="SD1_DATA2"/>
                   <pin peripheral="USDHC1" signal="usdhc_clk" pin_num="C1" pin_signal="SD1_CLK"/>
                   <pin peripheral="USDHC1" signal="usdhc_data, 0" pin_num="B3" pin_signal="SD1_DATA0"/>
+                  <pin peripheral="I2C1" signal="i2c_scl" pin_num="G17" pin_signal="UART4_TX_DATA"/>
+                  <pin peripheral="I2C1" signal="i2c_sda" pin_num="L17" pin_signal="GPIO1_IO03"/>
+                  <pin peripheral="UART1" signal="uart_rx" pin_num="K16" pin_signal="UART1_RX_DATA"/>
+                  <pin peripheral="UART1" signal="uart_tx" pin_num="K14" pin_signal="UART1_TX_DATA"/>
+                  <pin peripheral="UART1" signal="uart_cts_b" pin_num="K15" pin_signal="UART1_CTS_B"/>
+                  <pin peripheral="UART1" signal="uart_rts_b" pin_num="J14" pin_signal="UART1_RTS_B"/>
                </pins>
             </function>
          </functions_list>
       </pins>
       <ddr name="DDR" version="1.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
          <components/>
       </ddr>
       <tee name="TEE" version="4.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
          <tee_profile>
             <processor_version>N/A</processor_version>
          </tee_profile>
       </tee>
       <pbl name="PBL" version="1.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
          <pbl_configuration/>
       </pbl>
       <serdes name="SERDES" version="1.0" enabled="false" update_project_code="true">
+         <generated_project_files/>
          <components/>
       </serdes>
    </tools>
