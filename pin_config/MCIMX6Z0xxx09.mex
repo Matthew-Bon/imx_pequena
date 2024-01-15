@@ -20,12 +20,32 @@
       <pins name="Pins" version="13.1" enabled="true" update_project_code="true">
          <generated_project_files>
             <file path="board/pin_mux.c" update_enabled="true"/>
-            <file path="board/pin_mux.dts" update_enabled="true"/>
             <file path="board/pin_mux.h" update_enabled="true"/>
          </generated_project_files>
          <pins_profile>
             <processor_version>13.0.0</processor_version>
-            <power_domains/>
+            <external_user_signals>
+               <properties/>
+            </external_user_signals>
+            <power_domains>
+               <power_domain name="ANALOG" value="3.3"/>
+               <power_domain name="ANATOP" value="3.3"/>
+               <power_domain name="NVCC_DRAM" value="1.35"/>
+               <power_domain name="NVCC_GPIO" value="3.3"/>
+               <power_domain name="NVCC_GPIO3" value="3.3"/>
+               <power_domain name="NVCC_KPP" value="3.3"/>
+               <power_domain name="NVCC_NAND" value="3.3"/>
+               <power_domain name="NVCC_PLL" value="3.3"/>
+               <power_domain name="NVCC_SD" value="3.3"/>
+               <power_domain name="NVCC_UART" value="3.3"/>
+               <power_domain name="USB_VBUS" value="5.0"/>
+               <power_domain name="VDD_HIGH_CAP" value="3.3"/>
+               <power_domain name="VDD_HIGH_IN" value="3.3"/>
+               <power_domain name="VDD_SNVS" value="3.3"/>
+               <power_domain name="VDD_SNVS_CAP" value="3.3"/>
+               <power_domain name="VDD_SNVS_IN" value="3.3"/>
+               <power_domain name="VDD_USB_CAP" value="3.3"/>
+            </power_domains>
          </pins_profile>
          <functions_list>
             <function name="BOARD_InitPins">
@@ -48,6 +68,73 @@
                   <pin peripheral="UART1" signal="uart_tx" pin_num="K14" pin_signal="UART1_TX_DATA"/>
                   <pin peripheral="UART1" signal="uart_cts_b" pin_num="K15" pin_signal="UART1_CTS_B"/>
                   <pin peripheral="UART1" signal="uart_rts_b" pin_num="J14" pin_signal="UART1_RTS_B"/>
+                  <pin peripheral="UART2" signal="uart_cts_b" pin_num="A6" pin_signal="NAND_DATA06"/>
+                  <pin peripheral="UART2" signal="uart_rts_b" pin_num="A5" pin_signal="NAND_DATA07"/>
+                  <pin peripheral="UART2" signal="uart_rx" pin_num="C6" pin_signal="NAND_DATA04"/>
+                  <pin peripheral="UART2" signal="uart_tx" pin_num="B6" pin_signal="NAND_DATA05"/>
+                  <pin peripheral="XTALOSC" signal="xtalosc_xtali" pin_num="T16" pin_signal="XTALI"/>
+                  <pin peripheral="XTALOSC" signal="xtalosc_xtalo" pin_num="T17" pin_signal="XTALO"/>
+                  <pin peripheral="XTALOSC" signal="xtalosc_ref_clk_24m" pin_num="M16" pin_signal="GPIO1_IO04"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_miso" pin_num="B16" pin_signal="GPIO3_IO28"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_mosi" pin_num="A14" pin_signal="GPIO3_IO27"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_rdy" pin_num="C12" pin_signal="GPIO3_IO17"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_sclk" pin_num="C14" pin_signal="GPIO3_IO25"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_ss, 0" pin_num="B14" pin_signal="GPIO3_IO26"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_ss, 1" pin_num="B10" pin_signal="GPIO3_IO10"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_ss, 3" pin_num="D11" pin_signal="GPIO3_IO12"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_ss, 2" pin_num="A10" pin_signal="GPIO3_IO11"/>
+                  <pin peripheral="PWM1" signal="pwm_out" pin_num="N17" pin_signal="GPIO1_IO08"/>
+                  <pin peripheral="PWM2" signal="pwm_out" pin_num="M15" pin_signal="GPIO1_IO09"/>
+                  <pin peripheral="PWM3" signal="pwm_out" pin_num="E10" pin_signal="GPIO3_IO07"/>
+                  <pin peripheral="PWM4" signal="pwm_out" pin_num="M17" pin_signal="GPIO1_IO05"/>
+                  <pin peripheral="WDOG1" signal="wdog_wdog_any" pin_num="D16" pin_signal="KPP_COL7"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 0" pin_num="K13" pin_signal="GPIO1_IO00"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 1" pin_num="L15" pin_signal="GPIO1_IO01"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 2" pin_num="L14" pin_signal="GPIO1_IO02"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 6" pin_num="K17" pin_signal="GPIO1_IO06"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 7" pin_num="L16" pin_signal="GPIO1_IO07"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 0" pin_num="A8" pin_signal="GPIO3_IO00"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 1" pin_num="B8" pin_signal="GPIO3_IO01"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 2" pin_num="D9" pin_signal="GPIO3_IO02"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 3" pin_num="C9" pin_signal="GPIO3_IO03"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 4" pin_num="E9" pin_signal="GPIO3_IO04"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 6" pin_num="A9" pin_signal="GPIO3_IO06"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 5" pin_num="B9" pin_signal="GPIO3_IO05"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 9" pin_num="C10" pin_signal="GPIO3_IO09"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 8" pin_num="D10" pin_signal="GPIO3_IO08"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 13" pin_num="B11" pin_signal="GPIO3_IO13"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 14" pin_num="A11" pin_signal="GPIO3_IO14"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 15" pin_num="E12" pin_signal="GPIO3_IO15"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 16" pin_num="D12" pin_signal="GPIO3_IO16"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 19" pin_num="A12" pin_signal="GPIO3_IO19"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 18" pin_num="B12" pin_signal="GPIO3_IO18"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 20" pin_num="D13" pin_signal="GPIO3_IO20"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 21" pin_num="C13" pin_signal="GPIO3_IO21"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 22" pin_num="B13" pin_signal="GPIO3_IO22"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 23" pin_num="A13" pin_signal="GPIO3_IO23"/>
+                  <pin peripheral="GPIO3" signal="gpio_io, 24" pin_num="D14" pin_signal="GPIO3_IO24"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 0" pin_num="R10" pin_signal="GPIO5_IO00"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 1" pin_num="R9" pin_signal="GPIO5_IO01"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 2" pin_num="P11" pin_signal="GPIO5_IO02"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 3" pin_num="P10" pin_signal="GPIO5_IO03"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 4" pin_num="P9" pin_signal="GPIO5_IO04"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 5" pin_num="N8" pin_signal="GPIO5_IO05"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 7" pin_num="N10" pin_signal="GPIO5_IO07"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 6" pin_num="N11" pin_signal="GPIO5_IO06"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 8" pin_num="N9" pin_signal="GPIO5_IO08"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 9" pin_num="R6" pin_signal="GPIO5_IO09"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 10" pin_num="T10" pin_signal="BOOT_MODE0"/>
+                  <pin peripheral="GPIO5" signal="gpio_io, 11" pin_num="U10" pin_signal="BOOT_MODE1"/>
+                  <pin peripheral="I2C2" signal="i2c_scl" pin_num="F17" pin_signal="I2C2_SCL"/>
+                  <pin peripheral="I2C2" signal="i2c_sda" pin_num="F2" pin_signal="SD2_CLK"/>
+                  <pin peripheral="SJC" signal="sjc_mod" pin_num="P15" pin_signal="JTAG_MOD"/>
+                  <pin peripheral="SJC" signal="sjc_tck" pin_num="M14" pin_signal="JTAG_TCK"/>
+                  <pin peripheral="SJC" signal="sjc_tdi" pin_num="N16" pin_signal="JTAG_TDI"/>
+                  <pin peripheral="SJC" signal="sjc_tdo" pin_num="N15" pin_signal="JTAG_TDO"/>
+                  <pin peripheral="SJC" signal="sjc_tms" pin_num="P14" pin_signal="JTAG_TMS"/>
+                  <pin peripheral="SJC" signal="sjc_trstb" pin_num="N14" pin_signal="JTAG_TRST_B"/>
+                  <pin peripheral="UART3" signal="uart_rx" pin_num="H16" pin_signal="UART3_RX_DATA"/>
+                  <pin peripheral="UART3" signal="uart_tx" pin_num="H17" pin_signal="UART3_TX_DATA"/>
                </pins>
             </function>
          </functions_list>

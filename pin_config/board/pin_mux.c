@@ -11,6 +11,9 @@ processor: MCIMX6Z0xxx09
 package_id: MCIMX6Z0DVM09
 mcu_data: ksdk2_0
 processor_version: 13.0.0
+external_user_signals: {}
+power_domains: {ANALOG: '3.3', ANATOP: '3.3', NVCC_DRAM: '1.35', NVCC_GPIO: '3.3', NVCC_GPIO3: '3.3', NVCC_KPP: '3.3', NVCC_NAND: '3.3', NVCC_PLL: '3.3', NVCC_SD: '3.3',
+  NVCC_UART: '3.3', USB_VBUS: '5.0', VDD_HIGH_CAP: '3.3', VDD_HIGH_IN: '3.3', VDD_SNVS: '3.3', VDD_SNVS_CAP: '3.3', VDD_SNVS_IN: '3.3', VDD_USB_CAP: '3.3'}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -46,6 +49,73 @@ BOARD_InitPins:
   - {pin_num: K14, peripheral: UART1, signal: uart_tx, pin_signal: UART1_TX_DATA}
   - {pin_num: K15, peripheral: UART1, signal: uart_cts_b, pin_signal: UART1_CTS_B}
   - {pin_num: J14, peripheral: UART1, signal: uart_rts_b, pin_signal: UART1_RTS_B}
+  - {pin_num: A6, peripheral: UART2, signal: uart_cts_b, pin_signal: NAND_DATA06}
+  - {pin_num: A5, peripheral: UART2, signal: uart_rts_b, pin_signal: NAND_DATA07}
+  - {pin_num: C6, peripheral: UART2, signal: uart_rx, pin_signal: NAND_DATA04}
+  - {pin_num: B6, peripheral: UART2, signal: uart_tx, pin_signal: NAND_DATA05}
+  - {pin_num: T16, peripheral: XTALOSC, signal: xtalosc_xtali, pin_signal: XTALI}
+  - {pin_num: T17, peripheral: XTALOSC, signal: xtalosc_xtalo, pin_signal: XTALO}
+  - {pin_num: M16, peripheral: XTALOSC, signal: xtalosc_ref_clk_24m, pin_signal: GPIO1_IO04}
+  - {pin_num: B16, peripheral: ECSPI1, signal: ecspi_miso, pin_signal: GPIO3_IO28}
+  - {pin_num: A14, peripheral: ECSPI1, signal: ecspi_mosi, pin_signal: GPIO3_IO27}
+  - {pin_num: C12, peripheral: ECSPI1, signal: ecspi_rdy, pin_signal: GPIO3_IO17}
+  - {pin_num: C14, peripheral: ECSPI1, signal: ecspi_sclk, pin_signal: GPIO3_IO25}
+  - {pin_num: B14, peripheral: ECSPI1, signal: 'ecspi_ss, 0', pin_signal: GPIO3_IO26}
+  - {pin_num: B10, peripheral: ECSPI1, signal: 'ecspi_ss, 1', pin_signal: GPIO3_IO10}
+  - {pin_num: D11, peripheral: ECSPI1, signal: 'ecspi_ss, 3', pin_signal: GPIO3_IO12}
+  - {pin_num: A10, peripheral: ECSPI1, signal: 'ecspi_ss, 2', pin_signal: GPIO3_IO11}
+  - {pin_num: N17, peripheral: PWM1, signal: pwm_out, pin_signal: GPIO1_IO08}
+  - {pin_num: M15, peripheral: PWM2, signal: pwm_out, pin_signal: GPIO1_IO09}
+  - {pin_num: E10, peripheral: PWM3, signal: pwm_out, pin_signal: GPIO3_IO07}
+  - {pin_num: M17, peripheral: PWM4, signal: pwm_out, pin_signal: GPIO1_IO05}
+  - {pin_num: D16, peripheral: WDOG1, signal: wdog_wdog_any, pin_signal: KPP_COL7}
+  - {pin_num: K13, peripheral: GPIO1, signal: 'gpio_io, 0', pin_signal: GPIO1_IO00}
+  - {pin_num: L15, peripheral: GPIO1, signal: 'gpio_io, 1', pin_signal: GPIO1_IO01}
+  - {pin_num: L14, peripheral: GPIO1, signal: 'gpio_io, 2', pin_signal: GPIO1_IO02}
+  - {pin_num: K17, peripheral: GPIO1, signal: 'gpio_io, 6', pin_signal: GPIO1_IO06}
+  - {pin_num: L16, peripheral: GPIO1, signal: 'gpio_io, 7', pin_signal: GPIO1_IO07}
+  - {pin_num: A8, peripheral: GPIO3, signal: 'gpio_io, 0', pin_signal: GPIO3_IO00}
+  - {pin_num: B8, peripheral: GPIO3, signal: 'gpio_io, 1', pin_signal: GPIO3_IO01}
+  - {pin_num: D9, peripheral: GPIO3, signal: 'gpio_io, 2', pin_signal: GPIO3_IO02}
+  - {pin_num: C9, peripheral: GPIO3, signal: 'gpio_io, 3', pin_signal: GPIO3_IO03}
+  - {pin_num: E9, peripheral: GPIO3, signal: 'gpio_io, 4', pin_signal: GPIO3_IO04}
+  - {pin_num: A9, peripheral: GPIO3, signal: 'gpio_io, 6', pin_signal: GPIO3_IO06}
+  - {pin_num: B9, peripheral: GPIO3, signal: 'gpio_io, 5', pin_signal: GPIO3_IO05}
+  - {pin_num: C10, peripheral: GPIO3, signal: 'gpio_io, 9', pin_signal: GPIO3_IO09}
+  - {pin_num: D10, peripheral: GPIO3, signal: 'gpio_io, 8', pin_signal: GPIO3_IO08}
+  - {pin_num: B11, peripheral: GPIO3, signal: 'gpio_io, 13', pin_signal: GPIO3_IO13}
+  - {pin_num: A11, peripheral: GPIO3, signal: 'gpio_io, 14', pin_signal: GPIO3_IO14}
+  - {pin_num: E12, peripheral: GPIO3, signal: 'gpio_io, 15', pin_signal: GPIO3_IO15}
+  - {pin_num: D12, peripheral: GPIO3, signal: 'gpio_io, 16', pin_signal: GPIO3_IO16}
+  - {pin_num: A12, peripheral: GPIO3, signal: 'gpio_io, 19', pin_signal: GPIO3_IO19}
+  - {pin_num: B12, peripheral: GPIO3, signal: 'gpio_io, 18', pin_signal: GPIO3_IO18}
+  - {pin_num: D13, peripheral: GPIO3, signal: 'gpio_io, 20', pin_signal: GPIO3_IO20}
+  - {pin_num: C13, peripheral: GPIO3, signal: 'gpio_io, 21', pin_signal: GPIO3_IO21}
+  - {pin_num: B13, peripheral: GPIO3, signal: 'gpio_io, 22', pin_signal: GPIO3_IO22}
+  - {pin_num: A13, peripheral: GPIO3, signal: 'gpio_io, 23', pin_signal: GPIO3_IO23}
+  - {pin_num: D14, peripheral: GPIO3, signal: 'gpio_io, 24', pin_signal: GPIO3_IO24}
+  - {pin_num: R10, peripheral: GPIO5, signal: 'gpio_io, 0', pin_signal: GPIO5_IO00}
+  - {pin_num: R9, peripheral: GPIO5, signal: 'gpio_io, 1', pin_signal: GPIO5_IO01}
+  - {pin_num: P11, peripheral: GPIO5, signal: 'gpio_io, 2', pin_signal: GPIO5_IO02}
+  - {pin_num: P10, peripheral: GPIO5, signal: 'gpio_io, 3', pin_signal: GPIO5_IO03}
+  - {pin_num: P9, peripheral: GPIO5, signal: 'gpio_io, 4', pin_signal: GPIO5_IO04}
+  - {pin_num: N8, peripheral: GPIO5, signal: 'gpio_io, 5', pin_signal: GPIO5_IO05}
+  - {pin_num: N10, peripheral: GPIO5, signal: 'gpio_io, 7', pin_signal: GPIO5_IO07}
+  - {pin_num: N11, peripheral: GPIO5, signal: 'gpio_io, 6', pin_signal: GPIO5_IO06}
+  - {pin_num: N9, peripheral: GPIO5, signal: 'gpio_io, 8', pin_signal: GPIO5_IO08}
+  - {pin_num: R6, peripheral: GPIO5, signal: 'gpio_io, 9', pin_signal: GPIO5_IO09}
+  - {pin_num: T10, peripheral: GPIO5, signal: 'gpio_io, 10', pin_signal: BOOT_MODE0}
+  - {pin_num: U10, peripheral: GPIO5, signal: 'gpio_io, 11', pin_signal: BOOT_MODE1}
+  - {pin_num: F17, peripheral: I2C2, signal: i2c_scl, pin_signal: I2C2_SCL}
+  - {pin_num: F2, peripheral: I2C2, signal: i2c_sda, pin_signal: SD2_CLK}
+  - {pin_num: P15, peripheral: SJC, signal: sjc_mod, pin_signal: JTAG_MOD}
+  - {pin_num: M14, peripheral: SJC, signal: sjc_tck, pin_signal: JTAG_TCK}
+  - {pin_num: N16, peripheral: SJC, signal: sjc_tdi, pin_signal: JTAG_TDI}
+  - {pin_num: N15, peripheral: SJC, signal: sjc_tdo, pin_signal: JTAG_TDO}
+  - {pin_num: P14, peripheral: SJC, signal: sjc_tms, pin_signal: JTAG_TMS}
+  - {pin_num: N14, peripheral: SJC, signal: sjc_trstb, pin_signal: JTAG_TRST_B}
+  - {pin_num: H16, peripheral: UART3, signal: uart_rx, pin_signal: UART3_RX_DATA}
+  - {pin_num: H17, peripheral: UART3, signal: uart_tx, pin_signal: UART3_TX_DATA}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -56,20 +126,68 @@ BOARD_InitPins:
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void) {                                /*!< Function assigned for the core: Cortex-A7[ca7] */
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO00_GPIO1_IO00 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO01_GPIO1_IO01 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO02_GPIO1_IO02 , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO03_I2C1_SDA , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO04_REF_CLK_24M , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO05_PWM4_OUT , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO06_GPIO1_IO06 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO07_GPIO1_IO07 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO08_PWM1_OUT , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO09_PWM2_OUT , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO00_GPIO3_IO00 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO01_GPIO3_IO01 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO02_GPIO3_IO02 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO03_GPIO3_IO03 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO04_GPIO3_IO04 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO05_GPIO3_IO05 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO06_GPIO3_IO06 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO07_PWM3_OUT , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO08_GPIO3_IO08 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO09_GPIO3_IO09 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO10_ECSPI1_SS1 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO11_ECSPI1_SS2 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO12_ECSPI1_SS3 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO13_GPIO3_IO13 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO14_GPIO3_IO14 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO15_GPIO3_IO15 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO16_GPIO3_IO16 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO17_ECSPI1_RDY , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO18_GPIO3_IO18 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO19_GPIO3_IO19 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO20_GPIO3_IO20 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO21_GPIO3_IO21 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO22_GPIO3_IO22 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO23_GPIO3_IO23 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO24_GPIO3_IO24 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO25_ECSPI1_SCLK , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO26_ECSPI1_SS0 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO27_ECSPI1_MOSI , 0U);
+    IOMUXC_SetPinMux(IOMUXC_GPIO3_IO28_ECSPI1_MISO , 0U);
+    IOMUXC_SetPinMux(IOMUXC_I2C2_SCL_I2C2_SCL , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_MOD_SJC_MOD , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_TCK_SJC_TCK , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_TDI_SJC_TDI , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_TDO_SJC_TDO , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_TMS_SJC_TMS , 0U);
+    IOMUXC_SetPinMux(IOMUXC_JTAG_TRST_B_SJC_TRSTB , 0U);
+    IOMUXC_SetPinMux(IOMUXC_KPP_COL7_WDOG1_WDOG_ANY , 0U);
+    IOMUXC_SetPinMux(IOMUXC_NAND_DATA04_UART2_RX, 0U);
+    IOMUXC_SetPinMux(IOMUXC_NAND_DATA05_UART2_TX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_NAND_DATA06_UART2_CTS_B , 0U);
+    IOMUXC_SetPinMux(IOMUXC_NAND_DATA07_UART2_RTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_CLK_USDHC1_CLK , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_CMD_USDHC1_CMD , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA0_USDHC1_DATA0 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA1_USDHC1_DATA1 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA2_USDHC1_DATA2 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA3_USDHC1_DATA3 , 0U);
+    IOMUXC_SetPinMux(IOMUXC_SD2_CLK_I2C2_SDA , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_CTS_B_UART1_CTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_RTS_B_UART1_RTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_RX_DATA_UART1_RX , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_TX_DATA_UART1_TX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART3_RX_DATA_UART3_RX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART3_TX_DATA_UART3_TX , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART4_TX_DATA_I2C1_SCL , 0U);
-}
-
-/***********************************************************************************************************************
- * EOF
- **********************************************************************************************************************/
