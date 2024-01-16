@@ -51,7 +51,7 @@
             <function name="BOARD_InitPins">
                <description>Configures pin routing and optionally pin electrical features.</description>
                <options>
-                  <callFromInitBoot>false</callFromInitBoot>
+                  <callFromInitBoot>true</callFromInitBoot>
                   <coreID>ca7</coreID>
                </options>
                <dependencies/>
@@ -63,15 +63,10 @@
                   <pin peripheral="USDHC1" signal="usdhc_clk" pin_num="C1" pin_signal="SD1_CLK"/>
                   <pin peripheral="USDHC1" signal="usdhc_data, 0" pin_num="B3" pin_signal="SD1_DATA0"/>
                   <pin peripheral="I2C1" signal="i2c_scl" pin_num="G17" pin_signal="UART4_TX_DATA"/>
-                  <pin peripheral="I2C1" signal="i2c_sda" pin_num="L17" pin_signal="GPIO1_IO03"/>
                   <pin peripheral="UART1" signal="uart_rx" pin_num="K16" pin_signal="UART1_RX_DATA"/>
                   <pin peripheral="UART1" signal="uart_tx" pin_num="K14" pin_signal="UART1_TX_DATA"/>
                   <pin peripheral="UART1" signal="uart_cts_b" pin_num="K15" pin_signal="UART1_CTS_B"/>
                   <pin peripheral="UART1" signal="uart_rts_b" pin_num="J14" pin_signal="UART1_RTS_B"/>
-                  <pin peripheral="UART2" signal="uart_cts_b" pin_num="A6" pin_signal="NAND_DATA06"/>
-                  <pin peripheral="UART2" signal="uart_rts_b" pin_num="A5" pin_signal="NAND_DATA07"/>
-                  <pin peripheral="UART2" signal="uart_rx" pin_num="C6" pin_signal="NAND_DATA04"/>
-                  <pin peripheral="UART2" signal="uart_tx" pin_num="B6" pin_signal="NAND_DATA05"/>
                   <pin peripheral="XTALOSC" signal="xtalosc_xtali" pin_num="T16" pin_signal="XTALI"/>
                   <pin peripheral="XTALOSC" signal="xtalosc_xtalo" pin_num="T17" pin_signal="XTALO"/>
                   <pin peripheral="XTALOSC" signal="xtalosc_ref_clk_24m" pin_num="M16" pin_signal="GPIO1_IO04"/>
@@ -126,7 +121,6 @@
                   <pin peripheral="GPIO5" signal="gpio_io, 10" pin_num="T10" pin_signal="BOOT_MODE0"/>
                   <pin peripheral="GPIO5" signal="gpio_io, 11" pin_num="U10" pin_signal="BOOT_MODE1"/>
                   <pin peripheral="I2C2" signal="i2c_scl" pin_num="F17" pin_signal="I2C2_SCL"/>
-                  <pin peripheral="I2C2" signal="i2c_sda" pin_num="F2" pin_signal="SD2_CLK"/>
                   <pin peripheral="SJC" signal="sjc_mod" pin_num="P15" pin_signal="JTAG_MOD"/>
                   <pin peripheral="SJC" signal="sjc_tck" pin_num="M14" pin_signal="JTAG_TCK"/>
                   <pin peripheral="SJC" signal="sjc_tdi" pin_num="N16" pin_signal="JTAG_TDI"/>
@@ -135,6 +129,12 @@
                   <pin peripheral="SJC" signal="sjc_trstb" pin_num="N14" pin_signal="JTAG_TRST_B"/>
                   <pin peripheral="UART3" signal="uart_rx" pin_num="H16" pin_signal="UART3_RX_DATA"/>
                   <pin peripheral="UART3" signal="uart_tx" pin_num="H17" pin_signal="UART3_TX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_cts_b" pin_num="J15" pin_signal="UART2_CTS_B"/>
+                  <pin peripheral="UART2" signal="uart_rts_b" pin_num="H14" pin_signal="UART2_RTS_B"/>
+                  <pin peripheral="UART2" signal="uart_rx" pin_num="J16" pin_signal="UART2_RX_DATA"/>
+                  <pin peripheral="UART2" signal="uart_tx" pin_num="J17" pin_signal="UART2_TX_DATA"/>
+                  <pin peripheral="I2C2" signal="i2c_sda" pin_num="G13" pin_signal="I2C2_SDA"/>
+                  <pin peripheral="I2C1" signal="i2c_sda" pin_num="G16" pin_signal="UART4_RX_DATA"/>
                </pins>
             </function>
          </functions_list>

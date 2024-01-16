@@ -30,12 +30,13 @@ power_domains: {ANALOG: '3.3', ANATOP: '3.3', NVCC_DRAM: '1.35', NVCC_GPIO: '3.3
  * END ****************************************************************************************************************/
 void BOARD_InitBootPins(void)
 {
+    BOARD_InitPins();
 }
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 BOARD_InitPins:
-- options: {callFromInitBoot: 'false', coreID: ca7}
+- options: {callFromInitBoot: 'true', coreID: ca7}
 - pin_list:
   - {pin_num: A2, peripheral: USDHC1, signal: 'usdhc_data, 3', pin_signal: SD1_DATA3}
   - {pin_num: B2, peripheral: USDHC1, signal: 'usdhc_data, 1', pin_signal: SD1_DATA1}
@@ -44,15 +45,10 @@ BOARD_InitPins:
   - {pin_num: C1, peripheral: USDHC1, signal: usdhc_clk, pin_signal: SD1_CLK}
   - {pin_num: B3, peripheral: USDHC1, signal: 'usdhc_data, 0', pin_signal: SD1_DATA0}
   - {pin_num: G17, peripheral: I2C1, signal: i2c_scl, pin_signal: UART4_TX_DATA}
-  - {pin_num: L17, peripheral: I2C1, signal: i2c_sda, pin_signal: GPIO1_IO03}
   - {pin_num: K16, peripheral: UART1, signal: uart_rx, pin_signal: UART1_RX_DATA}
   - {pin_num: K14, peripheral: UART1, signal: uart_tx, pin_signal: UART1_TX_DATA}
   - {pin_num: K15, peripheral: UART1, signal: uart_cts_b, pin_signal: UART1_CTS_B}
   - {pin_num: J14, peripheral: UART1, signal: uart_rts_b, pin_signal: UART1_RTS_B}
-  - {pin_num: A6, peripheral: UART2, signal: uart_cts_b, pin_signal: NAND_DATA06}
-  - {pin_num: A5, peripheral: UART2, signal: uart_rts_b, pin_signal: NAND_DATA07}
-  - {pin_num: C6, peripheral: UART2, signal: uart_rx, pin_signal: NAND_DATA04}
-  - {pin_num: B6, peripheral: UART2, signal: uart_tx, pin_signal: NAND_DATA05}
   - {pin_num: T16, peripheral: XTALOSC, signal: xtalosc_xtali, pin_signal: XTALI}
   - {pin_num: T17, peripheral: XTALOSC, signal: xtalosc_xtalo, pin_signal: XTALO}
   - {pin_num: M16, peripheral: XTALOSC, signal: xtalosc_ref_clk_24m, pin_signal: GPIO1_IO04}
@@ -107,7 +103,6 @@ BOARD_InitPins:
   - {pin_num: T10, peripheral: GPIO5, signal: 'gpio_io, 10', pin_signal: BOOT_MODE0}
   - {pin_num: U10, peripheral: GPIO5, signal: 'gpio_io, 11', pin_signal: BOOT_MODE1}
   - {pin_num: F17, peripheral: I2C2, signal: i2c_scl, pin_signal: I2C2_SCL}
-  - {pin_num: F2, peripheral: I2C2, signal: i2c_sda, pin_signal: SD2_CLK}
   - {pin_num: P15, peripheral: SJC, signal: sjc_mod, pin_signal: JTAG_MOD}
   - {pin_num: M14, peripheral: SJC, signal: sjc_tck, pin_signal: JTAG_TCK}
   - {pin_num: N16, peripheral: SJC, signal: sjc_tdi, pin_signal: JTAG_TDI}
@@ -116,6 +111,12 @@ BOARD_InitPins:
   - {pin_num: N14, peripheral: SJC, signal: sjc_trstb, pin_signal: JTAG_TRST_B}
   - {pin_num: H16, peripheral: UART3, signal: uart_rx, pin_signal: UART3_RX_DATA}
   - {pin_num: H17, peripheral: UART3, signal: uart_tx, pin_signal: UART3_TX_DATA}
+  - {pin_num: J15, peripheral: UART2, signal: uart_cts_b, pin_signal: UART2_CTS_B}
+  - {pin_num: H14, peripheral: UART2, signal: uart_rts_b, pin_signal: UART2_RTS_B}
+  - {pin_num: J16, peripheral: UART2, signal: uart_rx, pin_signal: UART2_RX_DATA}
+  - {pin_num: J17, peripheral: UART2, signal: uart_tx, pin_signal: UART2_TX_DATA}
+  - {pin_num: G13, peripheral: I2C2, signal: i2c_sda, pin_signal: I2C2_SDA}
+  - {pin_num: G16, peripheral: I2C1, signal: i2c_sda, pin_signal: UART4_RX_DATA}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -129,7 +130,6 @@ void BOARD_InitPins(void) {                                /*!< Function assigne
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO00_GPIO1_IO00 , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO01_GPIO1_IO01 , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO02_GPIO1_IO02 , 0U);
-    IOMUXC_SetPinMux(IOMUXC_GPIO1_IO03_I2C1_SDA , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO04_REF_CLK_24M , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO05_PWM4_OUT , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO1_IO06_GPIO1_IO06 , 0U);
@@ -166,6 +166,7 @@ void BOARD_InitPins(void) {                                /*!< Function assigne
     IOMUXC_SetPinMux(IOMUXC_GPIO3_IO27_ECSPI1_MOSI , 0U);
     IOMUXC_SetPinMux(IOMUXC_GPIO3_IO28_ECSPI1_MISO , 0U);
     IOMUXC_SetPinMux(IOMUXC_I2C2_SCL_I2C2_SCL , 0U);
+    IOMUXC_SetPinMux(IOMUXC_I2C2_SDA_I2C2_SDA , 0U);
     IOMUXC_SetPinMux(IOMUXC_JTAG_MOD_SJC_MOD , 0U);
     IOMUXC_SetPinMux(IOMUXC_JTAG_TCK_SJC_TCK , 0U);
     IOMUXC_SetPinMux(IOMUXC_JTAG_TDI_SJC_TDI , 0U);
@@ -173,21 +174,21 @@ void BOARD_InitPins(void) {                                /*!< Function assigne
     IOMUXC_SetPinMux(IOMUXC_JTAG_TMS_SJC_TMS , 0U);
     IOMUXC_SetPinMux(IOMUXC_JTAG_TRST_B_SJC_TRSTB , 0U);
     IOMUXC_SetPinMux(IOMUXC_KPP_COL7_WDOG1_WDOG_ANY , 0U);
-    IOMUXC_SetPinMux(IOMUXC_NAND_DATA04_UART2_RX, 0U);
-    IOMUXC_SetPinMux(IOMUXC_NAND_DATA05_UART2_TX , 0U);
-    IOMUXC_SetPinMux(IOMUXC_NAND_DATA06_UART2_CTS_B , 0U);
-    IOMUXC_SetPinMux(IOMUXC_NAND_DATA07_UART2_RTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_CLK_USDHC1_CLK , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_CMD_USDHC1_CMD , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA0_USDHC1_DATA0 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA1_USDHC1_DATA1 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA2_USDHC1_DATA2 , 0U);
     IOMUXC_SetPinMux(IOMUXC_SD1_DATA3_USDHC1_DATA3 , 0U);
-    IOMUXC_SetPinMux(IOMUXC_SD2_CLK_I2C2_SDA , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_CTS_B_UART1_CTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_RTS_B_UART1_RTS_B , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_RX_DATA_UART1_RX , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART1_TX_DATA_UART1_TX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART2_CTS_B_UART2_CTS_B , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART2_RTS_B_UART2_RTS_B , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART2_RX_DATA_UART2_RX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART2_TX_DATA_UART2_TX , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART3_RX_DATA_UART3_RX , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART3_TX_DATA_UART3_TX , 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART4_RX_DATA_I2C1_SDA , 0U);
     IOMUXC_SetPinMux(IOMUXC_UART4_TX_DATA_I2C1_SCL , 0U);

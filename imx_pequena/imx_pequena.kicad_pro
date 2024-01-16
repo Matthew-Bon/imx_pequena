@@ -462,6 +462,10 @@
     [
       "08944c63-1cea-4fda-90db-3d649a3edc95",
       "power"
+    ],
+    [
+      "67ebc767-2e5a-48b3-bea9-54bfbdafdbaf",
+      "pinouts"
     ]
   ],
   "text_variables": {}
