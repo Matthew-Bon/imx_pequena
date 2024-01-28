@@ -5,6 +5,35 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Mechanical:Fiducial" (in_bom yes) (on_board yes)
+      (property "Reference" "FID" (id 0) (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Fiducial" (id 1) (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "fiducial marker" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Fiducial Marker" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Fiducial*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Fiducial_0_1"
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0.508) (type default) (color 0 0 0 0))
+          (fill (type background))
+        )
+      )
+    )
   )
 
 
@@ -35,6 +64,57 @@
   (wire (pts (xy 87.63 80.01) (xy 100.33 80.01))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid e0d2f748-cfec-44a5-8f26-cee8e1c537c3)
+  )
+
+  (symbol (lib_id "Mechanical:Fiducial") (at 179.07 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 64e54a22-63a0-4db2-b405-8a28a973ed5d)
+    (property "Reference" "FID?" (id 0) (at 181.61 76.1999 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Fiducial" (id 1) (at 181.61 78.7399 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 179.07 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 179.07 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:Fiducial") (at 179.07 86.36 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid b6dfcf66-fbe6-453a-a92a-d4357889378e)
+    (property "Reference" "FID?" (id 0) (at 181.61 85.0899 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Fiducial" (id 1) (at 181.61 87.6299 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 179.07 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 179.07 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:Fiducial") (at 179.07 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid c3797c65-0eba-45f0-a5bc-5a86e83cb0c5)
+    (property "Reference" "FID?" (id 0) (at 181.61 68.5799 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Fiducial" (id 1) (at 181.61 71.1199 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 179.07 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 179.07 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
   )
 
   (sheet (at 54.61 100.33) (size 33.02 20.32) (fields_autoplaced)
@@ -285,6 +365,9 @@
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/1992d7b0-90e0-4ef2-be42-4d78e551caf7"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/19abf78c-447d-4a26-a146-68b25d9e4c7a"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/27f72761-f65f-4e29-a308-3170c5b56d4e"
@@ -602,6 +685,9 @@
     (path "/08944c63-1cea-4fda-90db-3d649a3edc95/da0ca8ef-3396-49f4-8edd-3ed4c9ba4671"
       (reference "D2") (unit 1) (value "D_Schottky") (footprint "")
     )
+    (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/24569c5c-3905-42a7-b371-b23bc9cdaa9e"
+      (reference "D?") (unit 1) (value "D_TVS") (footprint "")
+    )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/f018a515-bdc2-4719-84b3-f29126a0bfa9"
       (reference "D?") (unit 1) (value "D_Schottky") (footprint "")
     )
@@ -614,17 +700,26 @@
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/8f616ce0-61aa-4dde-a2cd-cb09a93b5a82"
       (reference "F?") (unit 1) (value "Fuse_Small") (footprint "")
     )
+    (path "/64e54a22-63a0-4db2-b405-8a28a973ed5d"
+      (reference "FID?") (unit 1) (value "Fiducial") (footprint "")
+    )
+    (path "/b6dfcf66-fbe6-453a-a92a-d4357889378e"
+      (reference "FID?") (unit 1) (value "Fiducial") (footprint "")
+    )
+    (path "/c3797c65-0eba-45f0-a5bc-5a86e83cb0c5"
+      (reference "FID?") (unit 1) (value "Fiducial") (footprint "")
+    )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/af73b285-838d-4b82-83cb-376f8bbe2ef4"
       (reference "J1") (unit 1) (value "Conn_ARM_JTAG_SWD_10") (footprint "")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/f706b935-d0e8-4efc-a2ee-118b40541d20/5ba73e60-b0ea-4332-960b-b1b75d9138d5"
       (reference "J2") (unit 1) (value "Micro_SD_Card") (footprint "")
     )
-    (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/f26dfe91-6ea2-4dd7-ac27-80f43cf12e1c"
-      (reference "J3") (unit 1) (value "USB_B_Micro") (footprint "")
-    )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/e117ef28-5c52-4d5c-bd4e-b5be24785834"
       (reference "J4") (unit 1) (value "USB_C_Receptacle") (footprint "")
+    )
+    (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/b8dbd3c7-4df0-4d11-8ddd-ea24cb3f2676"
+      (reference "J?") (unit 1) (value "USB_A") (footprint "")
     )
     (path "/08944c63-1cea-4fda-90db-3d649a3edc95/9ee5e8f1-d628-4347-87c6-e91ba1bc0c3e"
       (reference "L1") (unit 1) (value "2.2u") (footprint "")
