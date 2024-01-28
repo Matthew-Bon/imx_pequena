@@ -859,6 +859,15 @@
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/207b395a-56be-41f1-8a18-a435f59fa0c1"
       (reference "SW?") (unit 1) (value "SW_SPST") (footprint "")
     )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/5911c43b-0b83-418e-96d6-8c04ac24e440"
+      (reference "TP?") (unit 1) (value "Bootmode 0") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/cb8edba8-9777-4304-93e5-5e202c6ceb41"
+      (reference "TP?") (unit 1) (value "SNVS") (footprint "")
+    )
+    (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/ff7f06de-9b76-4282-a33d-c6ea475f9f6a"
+      (reference "TP?") (unit 1) (value "Bootmode 1") (footprint "")
+    )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/f0c3052c-1cd9-43ec-abdf-2d5e6503e296"
       (reference "U1") (unit 1) (value "MCIMX6Z0DVM09AB") (footprint "mb_nxp_mcu_mpu:BGA289C80P17X17_1400X1400X132")
     )
