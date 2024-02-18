@@ -686,6 +686,7 @@
     )
   )
 
+
   (junction (at 64.77 44.45) (diameter 0) (color 0 0 0 0)
     (uuid 02e87dc1-92ea-4c84-8787-f48b18218b7a)
   )
@@ -1327,7 +1328,7 @@
     (uuid e117ef28-5c52-4d5c-bd4e-b5be24785834)
     (property "Reference" "J4" (id 0) (at 29.21 17.78 0))
     (property "Value" "USB_C_Receptacle" (id 1) (at 29.21 20.32 0))
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles" (id 2) (at 33.02 50.8 0)
+    (property "Footprint" "" (id 2) (at 33.02 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 33.02 50.8 0)

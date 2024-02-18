@@ -141,6 +141,7 @@
   )
 
 
+
   (wire (pts (xy 87.63 83.82) (xy 100.33 83.82))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 37922d40-8805-4324-a952-03eb60adfc42)
@@ -217,7 +218,7 @@
     (property "Value" "MountingHole" (id 1) (at 182.88 55.8799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad" (id 2) (at 180.34 54.61 0)
+    (property "Footprint" "MountingHole:MountingHole_2.5mm" (id 2) (at 180.34 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 180.34 54.61 0)
@@ -268,7 +269,7 @@
     (property "Value" "MountingHole" (id 1) (at 204.47 55.8799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad" (id 2) (at 201.93 54.61 0)
+    (property "Footprint" "MountingHole:MountingHole_2.5mm" (id 2) (at 201.93 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 201.93 54.61 0)
@@ -302,7 +303,7 @@
     (property "Value" "MountingHole" (id 1) (at 182.88 63.4999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad" (id 2) (at 180.34 62.23 0)
+    (property "Footprint" "MountingHole:MountingHole_2.5mm" (id 2) (at 180.34 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 180.34 62.23 0)
@@ -332,10 +333,6 @@
     (property "Sheet file" "imx_mpu.kicad_sch" (id 1) (at 54.61 93.2946 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "I2C2_SCL" bidirectional (at 54.61 73.66 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 9ebb977c-5a2c-406d-ad80-a51af15e806e)
-    )
     (pin "USB2_DN" bidirectional (at 87.63 88.9 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 938e83c5-022a-435a-b2c3-086b6ead3d98)
@@ -343,10 +340,6 @@
     (pin "USB2_DP" bidirectional (at 87.63 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid a1e79f86-0572-4229-af81-ee224d485799)
-    )
-    (pin "I2C2_SDA" bidirectional (at 54.61 71.12 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 31cc6bb2-f229-4ee1-b2f2-30cd663c9929)
     )
     (pin "USB1_DN" bidirectional (at 87.63 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -945,28 +938,28 @@
       (reference "FID3") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/555d34c4-10d1-48af-95a8-db4f4a4faf49"
-      (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm_Pad")
+      (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/c540006f-acfd-4f86-bab2-46f63ae58469"
-      (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm_Pad")
+      (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/bfef9c0f-78ab-4444-8284-2ee3a2a1e888"
-      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm_Pad")
+      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
     )
     (path "/44b853a4-620e-45a2-9211-899f46761644"
       (reference "H4") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_2.5mm_Pad")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/af73b285-838d-4b82-83cb-376f8bbe2ef4"
-      (reference "J1") (unit 1) (value "Conn_ARM_JTAG_SWD_10") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical")
+      (reference "J1") (unit 1) (value "Conn_ARM_JTAG_SWD_10") (footprint "")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/f706b935-d0e8-4efc-a2ee-118b40541d20/5ba73e60-b0ea-4332-960b-b1b75d9138d5"
-      (reference "J2") (unit 1) (value "Micro_SD_Card") (footprint "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5")
+      (reference "J2") (unit 1) (value "Micro_SD_Card") (footprint "")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/8547231b-655d-4dc1-90f6-5d7d466e2d62/52654f1a-ab43-4151-9c96-948587e49d47"
       (reference "J3") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/e117ef28-5c52-4d5c-bd4e-b5be24785834"
-      (reference "J4") (unit 1) (value "USB_C_Receptacle") (footprint "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles")
+      (reference "J4") (unit 1) (value "USB_C_Receptacle") (footprint "")
     )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/b8dbd3c7-4df0-4d11-8ddd-ea24cb3f2676"
       (reference "J5") (unit 1) (value "USB_A") (footprint "Connector_USB:USB_A_Molex_67643_Horizontal")
@@ -1176,7 +1169,7 @@
       (reference "X1") (unit 1) (value "ASE-xxxMHz") (footprint "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/7c29cca2-a481-4140-9382-2fdaf3d142da"
-      (reference "Y2") (unit 1) (value "Crystal") (footprint "Crystal:Crystal_SMD_MicroCrystal_MS1V-T1K")
+      (reference "Y2") (unit 1) (value "Crystal") (footprint "")
     )
   )
 )
