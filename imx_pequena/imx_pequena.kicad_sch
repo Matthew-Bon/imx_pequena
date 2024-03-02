@@ -141,7 +141,6 @@
   )
 
 
-
   (wire (pts (xy 87.63 83.82) (xy 100.33 83.82))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 37922d40-8805-4324-a952-03eb60adfc42)
@@ -950,40 +949,40 @@
       (reference "H4") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_2.5mm_Pad")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/af73b285-838d-4b82-83cb-376f8bbe2ef4"
-      (reference "J1") (unit 1) (value "Conn_ARM_JTAG_SWD_10") (footprint "")
+      (reference "J1") (unit 1) (value "Conn_ARM_JTAG_SWD_10") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/f706b935-d0e8-4efc-a2ee-118b40541d20/5ba73e60-b0ea-4332-960b-b1b75d9138d5"
-      (reference "J2") (unit 1) (value "Micro_SD_Card") (footprint "")
+      (reference "J2") (unit 1) (value "Micro_SD_Card") (footprint "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/8547231b-655d-4dc1-90f6-5d7d466e2d62/52654f1a-ab43-4151-9c96-948587e49d47"
       (reference "J3") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/e117ef28-5c52-4d5c-bd4e-b5be24785834"
-      (reference "J4") (unit 1) (value "USB_C_Receptacle") (footprint "")
+      (reference "J4") (unit 1) (value "USB_C_Receptacle") (footprint "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles")
     )
     (path "/e35c56f9-4713-4571-acdb-6ae2f2073fad/b8dbd3c7-4df0-4d11-8ddd-ea24cb3f2676"
       (reference "J5") (unit 1) (value "USB_A") (footprint "Connector_USB:USB_A_Molex_67643_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/6742b204-8736-4836-b3bf-472e4f473a36"
-      (reference "J6") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J6") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/e5551de0-3606-4410-ab94-a71342c6f74f"
-      (reference "J7") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J7") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/33c7aa44-e228-4614-9bb2-119f0cb29ed9"
-      (reference "J8") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J8") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/50cba7ce-19dd-47b2-ac55-038045373185"
-      (reference "J9") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J9") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/e7cd94b3-a5b8-4d6c-9afe-f8b469bf8683"
-      (reference "J10") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J10") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/3707ed86-4ad1-4ef8-bdac-ea65c54e57af"
-      (reference "J11") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J11") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/67ebc767-2e5a-48b3-bea9-54bfbdafdbaf/43e7d36f-c51d-4f88-aebb-1d145c86ca00"
-      (reference "J12") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal")
+      (reference "J12") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal")
     )
     (path "/08944c63-1cea-4fda-90db-3d649a3edc95/9ee5e8f1-d628-4347-87c6-e91ba1bc0c3e"
       (reference "L1") (unit 1) (value "2.2u") (footprint "Inductor_SMD:L_Bourns_SRP5030T")
@@ -1169,7 +1168,7 @@
       (reference "X1") (unit 1) (value "ASE-xxxMHz") (footprint "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm")
     )
     (path "/b1ca3e0b-34ce-4229-a1de-c4269e4ccd13/e4b0b1c3-ef5e-4ab5-8d70-6acfd00108e3/7c29cca2-a481-4140-9382-2fdaf3d142da"
-      (reference "Y2") (unit 1) (value "Crystal") (footprint "")
+      (reference "Y2") (unit 1) (value "Crystal") (footprint "Crystal:Crystal_SMD_MicroCrystal_MS1V-T1K")
     )
   )
 )
